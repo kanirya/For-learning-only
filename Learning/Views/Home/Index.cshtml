@@ -1,13 +1,44 @@
 ﻿
 @{
     ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+
+
+<style>
+    body{
+        background=blue;
+
+    }
+
+
+    .blue-text {
+        color: blue;
+        background:#000;
+        margin:20;
+    }
+
+    .border-box.blue-text {
+        border: 2px solid black;
+        padding: 10px;
+        margin: 20px;
+        border-radius:10px;
+        
+    }
+
+
+</style>
 
 <h1>Index</h1>
 <a class="btn btn-primary"  href="https://www.monkeytype.com">Click me</a>
 @{
-
     DateTime a = DateTime.Now;
     <h1>@a</h1>
-    <h1>{@DateTime.Now.Date}</h1>
+    <h1 class="blue-text">{@DateTime.Now.Date}</h1>
 }
+
+
+<div class="border-box">
+    <h3 class="blue-text">this is danish</h3>
+</div>

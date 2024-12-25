@@ -8,10 +8,11 @@ namespace Learning.Controllers
         {
             return View();
         } 
-     public ContentResult Not()
+        public IActionResult Category()
         {
-            return Content("Hey this is danish");
+            return View();
         } 
+    
    
     }
 }
